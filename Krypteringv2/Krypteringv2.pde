@@ -24,7 +24,10 @@ void mousePressed() {
       cypher = temp+5;
       print(char (cypher));
     }
-    println();   
+    String key = input;
+String[] list = split(key,' '); 
+saveStrings("code.txt",list);
+    println();  
     input = "";
   } else if (mousePressed && (mouseButton == RIGHT)) {
   
